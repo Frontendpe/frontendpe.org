@@ -1,10 +1,12 @@
 const express = require('express');
-const http = require("http");
+const serverless = require('serverless-http');
+const bodyParser = require('body-parser');
 
 const port = process.env.PORT || 3000;
 const app = express();
 const server = http.createServer(app);
 
+app.use(bodyParser);
 app.get('/', function(req, res) {
     res.redirect('https://www.facebook.com/groups/frontendpe');
 });
@@ -13,4 +15,4 @@ app.get('/streaming', function(req, res) {
     res.send('Vuelve pronto')
 });
 
-app.listen(port);
+module.exports.handler = serverless(app);
