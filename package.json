@@ -1,0 +1,25 @@
+{
+  "name": "frontendpe.org",
+  "version": "1.0.0",
+  "description": "Web publica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frontendpe/frontendpe.org.git"
+  },
+  "keywords": [
+    "frontend"
+  ],
+  "author": "eporroa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frontendpe/frontendpe.org/issues"
+  },
+  "homepage": "https://github.com/Frontendpe/frontendpe.org#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
